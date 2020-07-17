@@ -1,8 +1,7 @@
 import React from 'react';
-import styles from './styles.module.css';
 
 const Footer = () => (
-  <div className="bg-gray-700 p-4 w-full">
+  <div id="footer" className="bg-gray-700 p-4 w-full">
     <div className="container mx-auto text-center font-bold text-white">
       Projeto desenvolvido por Thiago Leal
       {' / '}

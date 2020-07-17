@@ -8,10 +8,10 @@ const fetcher = (...args) => fetch(...args).then((res) => res.json());
 const Index = () => {
   const { data, error } = useSWR('/api/get-promo', fetcher);
   return (
-    <div>
+    <div className="p-10">
       <PageTitle title="Seja bem vindo" />
       <h1>
-        <p className="mt-12 text-center">
+        <p className="text-center">
           O restaurante X sempre busca atender melhor seus clientes.
           <br />
           Por isso, estamos sempre abertos a ouvir a sua opinião.

@@ -4,14 +4,14 @@ import styles from './styles.module.css';
 
 const Header = () => (
   <>
-    <div className={styles.Wrapper}>
+    <div id="header" className={styles.Wrapper}>
       <div className="container mx-auto">
         <Link href="/">
           <a><img className="mx-auto" src="/logo-palpitebox.png" alt="PalpiteBox" /></a>
         </Link>
       </div>
     </div>
-    <div className="bg-gray-300 p-4 shadow-md text-center">
+    <div className="bg-gray-300 p-3 shadow-md text-center">
       <Link href="/sobre">
         <a className="px-2 hover:underline">Sobre</a>
       </Link>
