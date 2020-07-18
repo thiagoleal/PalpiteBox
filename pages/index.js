@@ -8,7 +8,7 @@ const fetcher = (...args) => fetch(...args).then((res) => res.json());
 const Index = () => {
   const { data, error } = useSWR('/api/get-promo', fetcher);
   return (
-    <div className="p-10">
+    <>
       <PageTitle title="Seja bem vindo" />
       <h1>
         <p className="text-center">
@@ -25,15 +25,15 @@ const Index = () => {
             </a>
           </Link>
 
-          { !data && <p>Carregando...</p>}
+          { !data && <p className="my-12 text-center">Carregando...</p>}
           { !error && data && data.showCoupon && (
-          <p className="mt-12 text-center">
+          <p className="my-12 text-center">
             {data.message}
           </p>
           )}
         </div>
       </h1>
-    </div>
+    </>
   );
 };
 

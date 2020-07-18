@@ -37,23 +37,24 @@ const Pesquisa = () => {
   };
 
   return (
-    <div className="p-10">
+    <>
       <PageTitle title="Pesquisa" />
       <h1 className="text-center font-bold text-2xl">Criticas e sugestões</h1>
-      <p className="text-center my-6">
+
+      <p className="text-center mx-auto my-6 w-2/3 md:w-auto">
         O restaurante X sempre busca atender melhor seus clientes.
         <br />
         Por isso, estamos sempre abertos a ouvir a sua opinião.
       </p>
       { !sucess && (
-      <div className="mx-auto w-1/5">
+      <div className="mx-auto w-3/5 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
         <label htmlFor="nome" className="font-bold">
           Seu nome:
           <input
             type="text"
             id="nome"
             name="Nome"
-            className="p-4 block shadow bg-blue-100 my-2 rounded"
+            className="w-full p-4 block shadow bg-blue-100 my-2 rounded"
             placeholder="Nome"
             onChange={onChange}
             value={form.Nome}
@@ -66,7 +67,7 @@ const Pesquisa = () => {
             type="text"
             id="email"
             name="Email"
-            className="p-4 block shadow bg-blue-100 my-2 rounded"
+            className="w-full p-4 block shadow bg-blue-100 my-2 rounded"
             placeholder="Email"
             onChange={onChange}
             value={form.Email}
@@ -79,7 +80,7 @@ const Pesquisa = () => {
             type="text"
             id="whatsapp"
             name="Whatsapp"
-            className="p-4 block shadow bg-blue-100 my-2 rounded"
+            className="w-full p-4 block shadow bg-blue-100 my-2 rounded"
             placeholder="Whatsapp"
             onChange={onChange}
             value={form.Whatsapp}
@@ -98,17 +99,19 @@ const Pesquisa = () => {
             ))}
           </div>
         </label>
-        <button
-          type="submit"
-          className="bg-blue-400 px-12 py-4 font-bold rounded-lg shadow-md hover:shadow"
-          onClick={save}
-        >
-          Salvar
-        </button>
+        <p className="text-center">
+          <button
+            type="submit"
+            className="bg-blue-400 px-12 py-4 font-bold rounded-lg shadow-md hover:shadow"
+            onClick={save}
+          >
+            Salvar
+          </button>
+        </p>
       </div>
       )}
       { sucess && (
-      <div className="mx-auto w-1/5">
+      <div className="mx-auto w-3/5 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
         <p className="mb-6 text-center bg-blue-100 border-t border-b border-blue-500 text-blue-700 px-4 py-3">
           Obrigado por contribuir com sua sugestão ou crítica.
         </p>
@@ -128,7 +131,7 @@ const Pesquisa = () => {
         )}
       </div>
       )}
-    </div>
+    </>
   );
 };
 

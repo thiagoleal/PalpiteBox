@@ -3,11 +3,11 @@ import Header from '../Header';
 import Footer from '../Footer';
 
 const Layout = ({ children }) => (
-  <div className="flex flex-col w-screen h-screen">
+  <div className="flex flex-col w-screen h-screen overflow-x-hidden">
     <Header />
-    <div id="container" className="container mx-auto flex-1">
+    <section className="container mx-auto flex-1 py-10 px-4">
       {children}
-    </div>
+    </section>
     <Footer />
   </div>
 );

@@ -1,17 +1,14 @@
 import React from 'react';
 import Link from 'next/link';
-import styles from './styles.module.css';
 
 const Header = () => (
-  <>
-    <div id="header" className={styles.Wrapper}>
-      <div className="container mx-auto">
-        <Link href="/">
-          <a><img className="mx-auto" src="/logo-palpitebox.png" alt="PalpiteBox" /></a>
-        </Link>
-      </div>
+  <header className="bg-gray-200">
+    <div id="logo" className="p-4 shadow-lg">
+      <Link href="/">
+        <a><img className="mx-auto" src="/logo-palpitebox.png" alt="PalpiteBox" /></a>
+      </Link>
     </div>
-    <div className="bg-gray-300 p-3 shadow-md text-center">
+    <nav className="p-3 shadow-md text-center">
       <Link href="/sobre">
         <a className="px-2 hover:underline">Sobre</a>
       </Link>
@@ -21,8 +18,8 @@ const Header = () => (
       <Link href="/pesquisa">
         <a className="px-2 hover:underline">Pesquisa</a>
       </Link>
-    </div>
-  </>
+    </nav>
+  </header>
 );
 
 export default Header;
