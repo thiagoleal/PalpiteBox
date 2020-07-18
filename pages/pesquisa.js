@@ -41,13 +41,13 @@ const Pesquisa = () => {
       <PageTitle title="Pesquisa" />
       <h1 className="text-center font-bold text-2xl">Criticas e sugestões</h1>
 
-      <p className="text-center mx-auto my-6 w-2/3 md:w-auto">
+      <p className="text-center mx-auto my-6 w-4/5 md:w-auto">
         O restaurante X sempre busca atender melhor seus clientes.
         <br />
         Por isso, estamos sempre abertos a ouvir a sua opinião.
       </p>
       { !sucess && (
-      <div className="mx-auto w-3/5 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
+      <div className="mx-auto w-3/4 sm:w-3/5 md:w-1/2 lg:w-2/6 xl:w-1/4">
         <label htmlFor="nome" className="font-bold">
           Seu nome:
           <input

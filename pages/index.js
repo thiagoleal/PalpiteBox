@@ -19,19 +19,19 @@ const Index = () => {
         <div className="text-center my-12">
           <Link href="/pesquisa">
             <a
-              className="bg-blue-400 px-12 py-4 font-bold rounded-lg shadow-md hover:shadow"
+              className="bg-blue-400 px-10 py-4 font-bold rounded-lg shadow-md hover:shadow"
             >
               Dar opinião ou sugestão
             </a>
           </Link>
+        </div>
 
-          { !data && <p className="my-12 text-center">Carregando...</p>}
-          { !error && data && data.showCoupon && (
-          <p className="my-12 text-center">
+        { !data && <p className="my-6 text-center">Carregando...</p>}
+        { !error && data && data.showCoupon && (
+          <p className="mt-12 text-center">
             {data.message}
           </p>
-          )}
-        </div>
+        )}
       </h1>
     </>
   );
